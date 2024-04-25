@@ -1,38 +1,376 @@
-.App {
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+.banner {
+  margin: 0;
+  padding: 0;
+  background-image: url('../src/asset/banner-img.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  box-shadow: 0 -100px 25px rgba(0, 0, 0, 0.714) inset, 0 100px 10px rgba(255, 255, 255, 0.633) inset;
+  border-radius: 0 0 0 100px;
+}
+.banner2 {
+  margin: 0;
+  padding: 0;
+  background-image: url('../src/asset/banner2.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  box-shadow: 0 -100px 25px rgba(0, 0, 0, 0.714) inset, 0 100px 10px rgba(255, 255, 255, 0.633) inset;
+  border-radius: 0 0 0 100px;
+}
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 18%;
+
+}
+
+.fade-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.head {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 60px;
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.text {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  bottom: 0;
+  left: 30px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+.textTitle {
+  display: flex;
+  justify-content: center;
+  margin-left: 200px;
+  align-items: center;
+}
+.arrowStyle{
+  display:inline-flexbox;
+  align-self: center;
+}
+.admi {
+  margin-left: 100px;
+  text-align: left;
+
+}
+
+.text p {
+  margin: 0;
+  font-size: 24px;
+}
+
+.menu {
+  height: 35px;
+  padding: 20px;
+}
+
+.card {
+  width: 450px;
+  height: 120px;
+  background-color: #fff;
+  border-radius: 8px 8px 0 0;
+  padding: 5px;
+  text-align: left;
+  background: linear-gradient(to bottom right, rgb(7, 226, 255) -80%, #fff 70%);
+}
+
+.card p {
+  font-size: 1rem;
+  color: #0b90e8;
+  line-height: 1.5;
+  margin-left: 15px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.secound {
+  margin: 10px;
+  padding: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.secTitle {
+  margin: 20px;
+  padding: 50px;
+  font-size: 18px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.secName {
+  color: orangered;
+  margin: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.shm-store {
+  font-weight: 400;
+}
+
+.secMar {
+  margin: 10px;
+}
+
+.threeSec {
+  text-align: center;
+}
+
+.threeContainer {
+  display: flex;
+  margin: 0px 250px 20px 250px;
+  border: 2px solid rgb(255, 60, 0);
+  background-color: orangered;
+  border-radius: 10px 10px 50px 10px;
+
+}
+
+.three1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  color: white;
+
+}
+
+.text12 {
+  display: flex;
+  text-align: left;
+
+}
+
+.threetext {
+  margin-left: 50px;
+  font-size: 20px;
+
+}
+
+.threeh3 {
+  margin-left: 50px;
+}
+
+.threeBtn button {
+  padding: 10px;
+  margin-left: 300px;
+  padding: 10px 40px 10px 40px;
+  border-radius: 40px;
+  cursor: pointer;
+  color: orangered;
+  font-weight: bold;
+}
+
+
+.four {
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.foursec {
+  margin: 20px;
+  padding: 50px;
+  font-size: 18px;
+
+}
+
+.fourName {
+  color: orangered;
+  margin: 10px;
+}
+
+.four-store {
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.fourMar {
+  margin: 10px;
+}
+
+
+.five {
+  border: 2px solid red;
+  text-align: center;
+  flex-direction: column;
+  background: linear-gradient(to right, #ff0303 -50%, #ff2d03 -50%, #ff5500 50%, #ff3300 100%);
+
+}
+
+.fivehead {
+  color: #ffffff;
+  margin-top: 50px;
+
+}
+
+.fivefirsth1 {
+  font-weight: 300;
+}
+
+
+.fivbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  border-radius: 20px;
+  margin: 5px 600px 10px 600px;
+
+
+}
+
+.fivbtn button {
+  align-items: center;
+  display: flex;
+  color: orangered;
+  border-radius: 40px;
+  font-size: large;
+  padding: 10px 15px 5px 15px;
+  cursor: pointer;
+}
+
+.fiveBtnimg {
+  height: 30px;
+  width: 30px;
+  margin-left: 20px;
+
+}
+
+
+.six {
+  display: flex;
+  justify-content: right;
+  padding: 70px;
+  gap: 80px;
+  background-color: #021344;
+}
+
+.item {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 15px;
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+
+span {
+  font-size: 15px;
+}
+
+.sixContain{
+  border: 1px solid #021344;
+  height: 350px;
+  width: 350px;
+  margin: -400px 20px 20px 150px;
+  background-color: #ffffff;
+  border-radius: 10px 100px 10px 10px;
+}
+.sixfeil{
+ margin: 30px; 
+}
+.sixpara{
+  text-align: center;
+  margin-top: 20px;
+}
+.allimg{
+
+  justify-content: space-between;
+  text-align: center;
+}
+.allimg1{
+  border: 1px solid orangered;
+  border-radius: 50%;
+  margin: 15px;
+}
+
+
+.seven{
+  background-color: #021344;
+  color: #ffffff;
+  justify-content: space-between;
+  border: 1px solid blue;
+  padding: 50px;
+  flex-direction: column;
+}
+.sevensec{
+  justify-content: space-between;
+}
+
+.sevenitem2{
+  justify-content: right;
+ 
+}
+.sevenitem2 input{
+  padding: 5px 60px 12px 50px; 
+  border-radius: 30px;
+}
+.sevenitem2 button{
+  padding: 8px 15px 8px 15px; 
+  border-radius: 30px;
+  background-color: orangered;
   color: white;
+  cursor: pointer;
+
 }
 
-.App-link {
-  color: #61dafb;
+.footer{
+  display: flex;
+  margin-top: 50px;
+}
+.footerse p{
+  display: flex;
+  margin-top: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footerend{
+  margin: -20px  0px 0px 1000px;
+  text-align: right;
+  justify-content: right;
+  align-items: right;
+}
+.footerend span{
+  gap: 150px;
+  font-size: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+  justify-content: space-between;
 }
